@@ -14,4 +14,5 @@ jobs:
           python-version: '3.11'
       - run: pip install -r requirements.txt
       - run: pip install pytest
+      - run: python -c "import analysis_engine; print('analysis_engine import OK')"
       - run: pytest -q
